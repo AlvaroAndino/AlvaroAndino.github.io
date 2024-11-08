@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #fafafa;
+        }
+        
+        .login-container {
+            width: 300px;
+            text-align: center;
+        }
+        .login-container h1 {
+            font-family: 'Instagram Sans', sans-serif;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            font-size: 14px;
+            border: 1px solid #dbdbdb;
+            border-radius: 3px;
+        }
+        .login-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #556f88;
+            border: none;
+            color: white;
+            font-weight: bold;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .login-button:disabled {
+            background-color: #16547e;
+        }
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        .divider::before,
+        .divider::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #807a7a;
+        }
+        .divider span {
+            margin: 0 10px;
+            color: #8e8e8e;
+            font-size: 12px;
+        }
+        .fb-login {
+            color: #385185;
+            font-weight: bold;
+            margin-top: 15px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .forgot-password {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #00376b;
+            cursor: pointer;
+        }
+        .register {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #8e8e8e;
+        }
+        .register a {
+            color: #3897f0 ;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .password-eye {
+            position: absolute;
+            right: 15px;
+            top: 8px;
+            color: #8e8e8e;
+            cursor: pointer;
+        }
+        .input-container {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="Logo-Instagram.png" width="150px" height="80px" alt="">
+        <input type="text" class="input-field" placeholder="Teléfono, usuario o correo electrónico">
+        <input type="password" class="input-field" placeholder="Contraseña">
+        <button class="login-button" disabled>Iniciar sesión</button>
+        <div class="divider"><span>o</span></div>
+        <div class="fb-login">Iniciar sesión con Facebook</div>
+        <div class="forgot-password">¿Has olvidado la contraseña?</div>
+        <div class="register">¿No tienes una cuenta? <a href="#">Regístrate</a></div>
+    </div>
+</body>
+</html>
